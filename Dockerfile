@@ -8,6 +8,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 # 
 RUN git clone https://github.com/coqui-ai/TTS.git
+WORKDIR TTS
 RUN pip install -e .
 
 EXPOSE 5055
