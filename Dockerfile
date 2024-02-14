@@ -8,7 +8,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/*
 # 
 RUN git clone https://github.com/coqui-ai/TTS.git
-RUN pip install -e .[all]
+RUN pip install -e .
 
 EXPOSE 5055
 
