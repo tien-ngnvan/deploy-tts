@@ -13,4 +13,5 @@ RUN pip install -e .
 
 EXPOSE 5055
 
-CMD ["../server", "--host", "0.0.0.0", "--port", "5055", "--model_name", "tts_models/en/ljspeech/tacotron2-DCA", "--vocoder_name", "vocoder_models/en/ljspeech/multiband-melgan"]
+#CMD ["../server", "--host", "0.0.0.0", "--port", "5055", "--model_name", "tts_models/en/ljspeech/tacotron2-DCA", "--vocoder_name", "vocoder_models/en/ljspeech/multiband-melgan"]
+CMD ["python", "TTS/server/server.py", "--port", "5055", "--model_name", "tts_models/en/ljspeech/fast_pitch", "--vocoder_name", "vocoder_models/en/ljspeech/hifigan_v2"]
