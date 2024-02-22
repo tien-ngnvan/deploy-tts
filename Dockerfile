@@ -5,6 +5,7 @@ RUN apt-get update \
         git \
         build-essential \
         dpkg-dev \
+        espeak-ng \
     && rm -rf /var/lib/apt/lists/*
 #
 RUN pip install TTS
