@@ -6,7 +6,7 @@ RUN apt-get update \
         build-essential \
         dpkg-dev \
     && rm -rf /var/lib/apt/lists/*
-# 
+#
 RUN pip install TTS
 
 EXPOSE 5055
